@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#151515"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background= "@drawable/pngegg"
+        />
+
+    <LinearLayout
+        android:paddingTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        >
+
+
+        <EditText
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round_button"
+            android:ems="10"
+            android:hint="           Enter Body temperature(ᵒC)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/heartRate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/round_button"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="                Enter Heart rate(BPM)"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/setValue"
+            android:layout_width="126dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="108dp"
+            android:background="@drawable/loginrnd"
+            android:text="Save"
+            android:textColor="#FCFFFFFF" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/view_items_screen"
+        android:layout_width="309dp"
+        android:layout_height="311dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginRight="-84dp"
+        android:layout_marginBottom="-73dp"
+        android:background="@drawable/helprnd"
+        android:text="Help"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+</RelativeLayout>
